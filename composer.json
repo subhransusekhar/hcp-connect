@@ -1,29 +1,30 @@
 {
-    "name": "subhransusekhar/hcp-connect", 
-    "version": "1.0.0", 
-    "description": "A generic REST API client for HCP", 
-    "type": "library", 
-    "keywords": ["REST", "api", "client", "curl", "JSON", "XML", "Object Storage", "HCP", "Hitachi Content Platform"], 
-    "homepage": "https://github.com/subhransusekhar/hcp-connect", 
-    "license": "Apche2", 
+    "name": "subhransusekhar/hcp-connect",
+    "version": "1.0.0",
+    "description": "A generic REST API client for HCP",
+    "type": "library",
+    "keywords": ["REST", "api", "client", "curl", "JSON", "XML", "Object Storage", "HCP", "Hitachi Content Platform"],
+    "homepage": "https://github.com/subhransusekhar/hcp-connect",
+    "license": "Apche2",
     "authors": [
         {
-            "name": "Subhransu Sekhar", 
-            "role": "Solution Architect", 
+            "name": "Subhransu Sekhar",
+            "role": "Solution Architect",
             "email": "subhransu.sm@gmail.com"
         }
     ],
     "support": {
         "issues": "https://github.com/subhransusekhar/hcp-connect/issues"
-    }, 
+    },
     "require": {
-        "php": ">=5.4.0", 
-        "tcdent/php-restclient": "^0.1.5"
-    }, 
+      "php": ">=5.4.0",
+      "ext-curl": "*",
+      "ext-json": "*"
+    },
     "require-dev": {
-        "php": ">=5.5.7", 
+        "php": ">=5.5.7",
         "phpunit/phpunit": ">=4.5"
-    }, 
+    },
     "autoload": {
         "files": ["hcpconnect.php"]
     }
